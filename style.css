@@ -25,6 +25,10 @@ html
     font-weight: bold;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 .warning-danger {
     color: #d32f2f;
 }
@@ -37,10 +41,6 @@ html
     color: #388e3c;
 }
 
-#value {
-    font-weight: bold;
-}
-
-.bold {
-    font-weight: bold;
+.warning-error {
+    color: #1565c0;
 }

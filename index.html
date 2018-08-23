@@ -1,5 +1,6 @@
-<html>
+<!DOCTYPE html>
     <head>
+        <meta charset="utf-8"/>
         <title>Flood Warning</title>
 
         <link href="https://cdnjs.cloudflare.com/ajax/libs/rickshaw/1.6.6/rickshaw.min.css" rel="stylesheet"> 
@@ -8,26 +9,26 @@
     </head>
     <body>
         <div class="background">
-        <div class="app">
-            <div class="medium">
-            Water level: <span id="value" class="medium"></span>
+            <div class="app">
+                <div class="medium">
+                    Water level: <span id="water-level" class="bold"></span>
+                </div>
+                <div id="warning" class="large bold"></div>
+                <div id="warning-info" class="medium"></div><br>
+                <div class="emergency-hotlines">
+                <div>
+                    National Emergency Hotline: <span class="bold">911</span>
+                </div>
+                <div>
+                    NDRRMC Trunklines: <span class="bold">(02)911-5061 to 65</span>
+                </div>
+                </div><br>
+                <hr><br>
+                <div class="water-level-text">
+                    Water levels for the past few seconds:
+                </div><br>
+                <div id="chart"></div>
             </div>
-            <div id="warning" class="large"></div>
-            <div id="notice" class="medium"></div><br>
-            <div class="emergency-hotlines">
-            <div>
-                National Emergency Hotline: <span class="bold">911</span>
-            </div>
-            <div>
-                NDRRMC Trunklines: <span class="bold">(02)911-5061 to 65</span>
-            </div>
-            </div>
-            <hr>
-            <div class="water-level-text">
-            Water levels for the past 45 seconds:
-            </div>
-            <div id="chart"></div>
-        </div>
         </div>
 
         <script src="https://d3js.org/d3.v3.min.js"></script>
