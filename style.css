@@ -1,0 +1,46 @@
+html 
+{
+    font-family: Roboto;
+}
+
+.background {
+    width: 60%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.app {
+    text-align: center;
+}
+
+.medium {
+    font-size: 20pt;
+}
+
+.large {
+    font-size: 75pt;
+}
+
+#warning {
+    font-weight: bold;
+}
+
+.warning-danger {
+    color: #d32f2f;
+}
+
+.warning-warning {
+    color: #ef6c00;
+}
+
+.warning-normal {
+    color: #388e3c;
+}
+
+#value {
+    font-weight: bold;
+}
+
+.bold {
+    font-weight: bold;
+}

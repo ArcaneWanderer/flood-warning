@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Flood Warning</title>
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/rickshaw/1.6.6/rickshaw.min.css" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="background">
+        <div class="app">
+            <div class="medium">
+            Water level: <span id="value" class="medium"></span>
+            </div>
+            <div id="warning" class="large"></div>
+            <div id="notice" class="medium"></div><br>
+            <div class="emergency-hotlines">
+            <div>
+                National Emergency Hotline: <span class="bold">911</span>
+            </div>
+            <div>
+                NDRRMC Trunklines: <span class="bold">(02)911-5061 to 65</span>
+            </div>
+            </div>
+            <hr>
+            <div class="water-level-text">
+            Water levels for the past 45 seconds:
+            </div>
+            <div id="chart"></div>
+        </div>
+        </div>
+
+        <script src="https://d3js.org/d3.v3.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/rickshaw/1.6.6/rickshaw.min.js"></script>
+        <script src="https://js.pusher.com/4.2/pusher.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
