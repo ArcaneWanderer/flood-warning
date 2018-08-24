@@ -59,8 +59,9 @@ window.onload = function() {
       distance = lastDistance;
       warningLevel = -1;
     } else {
-      waterLevel = SENSOR_HEIGHT - distance;
-      
+      //waterLevel = SENSOR_HEIGHT - distance;
+      waterLevel = distance;
+	    
       if (waterLevel >= 0 && waterLevel < 6)
         warningLevel = 0;
       else if (waterLevel >= 6 && waterLevel < 12)
